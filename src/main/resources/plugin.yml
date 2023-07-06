@@ -1,0 +1,32 @@
+name: HomePlugin
+version: 1.0.0
+main: haiytb.plugin.main.HomePlugin
+description: Một plugin dùng để dịch chuyển đến các vị trí home
+author: HaiYTB
+api: 1.20.1
+commands:
+  sethome:
+    description: Đặt vị trí home.
+    usage: /sethome <ten_home>
+    permission: homeplugin.sethome
+    default: true
+  home:
+    description: Dịch chuyển tức thời đến vị trí home.
+    usage: /home <ten_home>
+    permission: homeplugin.home
+    default: true
+  delhome:
+    description: Xoá một vị trí home.
+    usage: /delhome <ten_home>
+    permission: homeplugin.delhome
+    default: true
+  updatehome:
+    description: Cập nhật một vị trí home.
+    usage: /updatehome <ten_home>
+    permission: homeplugin.updatehome
+    default: true
+  homes:
+    description: Kiểm tra tất cả các home mà bạn đã đặt.
+    usage: /homes
+    permission: homeplugin.homes
+    default: true
